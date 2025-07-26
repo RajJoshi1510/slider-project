@@ -25,16 +25,20 @@ function changeSlide(n)
   showSlide(slideIndex);
 }
 
-function startAutoSlide() {
+function startAutoSlide() 
+{
   interval = setInterval(() => changeSlide(1), 3000);
 }
 
-function stopAutoSlide() {
+function stopAutoSlide() 
+{
   clearInterval(interval);
 }
 
-function createDots() {
-  for (let i = 0; i < images.length; i++) {
+function createDots() 
+{
+  for (let i = 0; i < images.length; i++) 
+  {
     const dot = document.createElement("span");
     dot.classList.add("dot");
     if (i === 0) dot.classList.add("active");
@@ -43,21 +47,20 @@ function createDots() {
   }
 }
 
-// Like & Share icon toggle
-document.getElementById("likeIcon").addEventListener("click", function () {
+document.getElementById("likeIcon").addEventListener("click", function () 
+{
   this.classList.toggle("liked");
 });
 
-document.getElementById("shareIcon").addEventListener("click", function () {
+document.getElementById("shareIcon").addEventListener("click", function () 
+{
   this.classList.toggle("shared");
 });
 
-// Initialize
 createDots();
 showSlide(slideIndex);
 startAutoSlide();
 
-// Pause on hover
 const sliderBox = document.getElementById("sliderBox");
 sliderBox.addEventListener("mouseover", stopAutoSlide);
 sliderBox.addEventListener("mouseout", startAutoSlide);
