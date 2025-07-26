@@ -1,0 +1,133 @@
+body 
+{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container 
+{
+  width: 90%;
+  max-width: 800px;
+  margin: 60px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: white;
+}
+
+.img-container 
+{
+  position: relative;
+  width: 100%;
+}
+
+.img-container img 
+{
+  width: 100%;
+  height: auto;
+  display: none;
+  border-radius: 12px;
+}
+
+.img-container img.active 
+{
+  display: block;
+}
+
+.prev,
+.next 
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.prev 
+{
+  left: 15px;
+}
+
+.next 
+{
+  right: 15px;
+}
+
+.dot-container 
+{
+  text-align: center;
+  padding: 12px 0;
+  background-color: #fff;
+}
+
+.dot 
+{
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dot.active 
+{
+  background-color: #333;
+}
+
+.social-icons 
+{
+  position: absolute;
+  bottom: 12px;
+  right: 15px;
+  z-index: 2;
+}
+
+.social-icons i 
+{
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: #888;
+  transition: 0.3s;
+}
+
+.liked 
+{
+  color: red !important;
+}
+
+.shared 
+{
+  color: blue !important;
+}
+
+/* /* responsive */
+@media (max-width: 768px) 
+{
+  .prev, .next 
+  {
+    font-size: 22px;
+    padding: 8px;
+  }
+
+  .social-icons i 
+  {
+    font-size: 18px;
+  }
+}
