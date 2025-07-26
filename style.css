@@ -117,7 +117,7 @@ body
   color: blue !important;
 }
 
-/* /* responsive */
+/*  responsive */
 @media (max-width: 768px) 
 {
   .prev, .next 
