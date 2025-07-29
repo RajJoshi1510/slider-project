@@ -1,34 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Auto Slide Image Gallery</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" crossorigin="anonymous" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <div class="container" id="sliderBox">
-    <div class="img-container">
-      <img src="https://picsum.photos/id/1015/700/400" class="active" alt="Image 1" />
-      <img src="https://picsum.photos/id/1026/700/400" alt="Image 2" />
-      <img src="https://picsum.photos/id/1033/700/400" alt="Image 3" />
-      <img src="https://picsum.photos/id/1047/700/400" alt="Image 4" />
-      <img src="https://picsum.photos/id/1058/700/400" alt="Image 5" />
+    <header>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Contacts</a>
+            <a href="">Info</a>
+        </nav>
+    </header>
+    <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="image/img1.jpg">
+                <div class="content">
+                    <div class="author">RAJ</div>
+                    <div class="title">DESIGN SLIDER</div>
+                    <div class="topic">MOOSE</div>
+                    <div class="des">
+                          The moose stands tall on a rocky slope, showcasing its iconic broad antlers. It is the largest member of the deer family and thrives in cold, forested regions of North America and Europe.
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+               </div>
+            </div>
+            <div class="item">
+                <img src="image/img2.jpg">
+                <div class="content">
+                    <div class="author">RAJ</div>
+                    <div class="title">DESIGN SLIDER</div>
+                    <div class="topic">MOOSE </div>
+                    <div class="des">
+                          The moose stands tall on a rocky slope, showcasing its iconic broad antlers. It is the largest member of the deer family and thrives in cold, forested regions of North America and Europe.
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img3.jpg">
+                <div class="content">
+                    <div class="author">RAJ</div>
+                    <div class="title">DESIGN SLIDER</div>
+                    <div class="topic">ELEPHANT</div>
+                    <div class="des">
+                        This is an African elephant, easily recognized by its large ears and powerful tusks. Elephants are intelligent, social animals often found in herds across forests and savannahs.
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img4.jpg">
+                <div class="content">
+                    <div class="author">RAJ</div>
+                    <div class="title">DESIGN SLIDER</div>
+                    <div class="topic">LEOPARD</div>
+                    <div class="des">
+                        The leopard is a stealthy predator with striking spotted fur, blending perfectly into the jungle. Known for its agility and strength, it can carry heavy prey up into trees to avoid scavengers.                    
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="image/img1.jpg">
+                <div class="content">
+                    <div class="title">
+                        Moose
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img2.jpg">
+                <div class="content">
+                    <div class="title">
+                        Moose
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img3.jpg">
+                <div class="content">
+                    <div class="title">
+                        Elephant
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img4.jpg">
+                <div class="content">
+                    <div class="title">
+                        Leopard
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
     </div>
 
-    <button class="prev" onclick="changeSlide(-1)"><i class="fa-solid fa-arrow-left"></i></button>
-    <button class="next" onclick="changeSlide(1)"><i class="fa-solid fa-arrow-right"></i></button>
-
-    <div class="dot-container" id="dotContainer"></div>
-
-    <div class="social-icons">
-      <i class="fa-solid fa-heart" id="likeIcon" title="Like"></i>
-      <i class="fa-solid fa-share" id="shareIcon" title="Share"></i>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
